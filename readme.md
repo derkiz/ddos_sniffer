@@ -83,5 +83,5 @@ A lightweight Bash script that monitors potential SYN flood (DDoS) attacks using
 - Test the monitor from another machine on the network using:
 
   ```bash
-  sudo hping3 --flood --syn -p 80 YOUR_PI_IP
+  sudo hping3 --syn -p 80 -c 1750 -i u1000 [your ip]
   ```
